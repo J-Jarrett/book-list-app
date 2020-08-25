@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/43073bc5a2.js" crossorigin="anonymous"></script>
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-pLgJ8jZ4aoPja/9zBSujjzs7QbkTKvKw1+zfKuumQF9U+TH3xv09UUsRI52fS+A6" crossorigin="anonymous"> -->
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-pLgJ8jZ4aoPja/9zBSujjzs7QbkTKvKw1+zfKuumQF9U+TH3xv09UUsRI52fS+A6" crossorigin="anonymous"> -->
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lumen/bootstrap.min.css" rel="stylesheet" integrity="sha384-715VMUUaOfZR3/rWXZJ9agJ/udwSXGEigabzUbJm2NR4/v5wpDy8c14yedZN6NL7" crossorigin="anonymous">
+</head>
+<body>
+  <!-- test 25 Aug 20 -->
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-book-open text-primary"></i>
+      My<span class = 'text-primary'>Book</span>List
+    </h1>
+    <form id="book-form">
+      <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id='title' class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id='author' class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" id='isbn' class='form-control'>
+      </div>
+      <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+    </form>
+  <table class="table table-striped mt-5" >
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id='book-list'></tbody>
+  </table>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
